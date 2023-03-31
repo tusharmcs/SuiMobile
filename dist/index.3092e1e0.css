@@ -1,0 +1,457 @@
+body {
+  overflow-wrap: anywhere;
+  background: linear-gradient(to top right, #222323 40%, #21415b) no-repeat;
+}
+
+ul {
+  margin-top: .4em;
+  list-style: square;
+}
+
+li {
+  margin-bottom: .4em;
+}
+
+h2 {
+  margin: .1em 0 .6em;
+}
+
+button {
+  overflow-wrap: initial;
+}
+
+textarea {
+  min-height: 5em;
+}
+
+table {
+  margin-bottom: 1em;
+}
+
+th {
+  vertical-align: bottom;
+  white-space: nowrap;
+}
+
+th, td {
+  overflow-wrap: break-word;
+  padding: .5em 2.5em .5em 0;
+}
+
+td {
+  vertical-align: top;
+}
+
+a:hover {
+  color: #00baff;
+}
+
+#page {
+  margin: 0 auto;
+}
+
+#network-widget {
+  color: #fff;
+  font-size: .9em;
+  position: absolute;
+  top: 2px;
+  right: 4px;
+}
+
+#network-widget .switch-btn:hover {
+  color: #90ee90;
+  text-decoration: underline;
+}
+
+#header {
+  text-align: center;
+  -webkit-backdrop-filter: blur(50px);
+  backdrop-filter: blur(50px);
+  justify-content: space-between;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  display: flex;
+}
+
+#title {
+  font-size: 2.3em;
+}
+
+#title:hover #cow {
+  display: inline-block;
+}
+
+#cow {
+  width: 1.15em;
+  vertical-align: top;
+  margin-top: .06em;
+  margin-left: .4em;
+  display: none;
+}
+
+#cow:hover {
+  transform: rotate(8deg);
+}
+
+#content {
+  min-height: 100vh;
+  text-align: center;
+  margin-top: 20%;
+  padding: 2rem;
+}
+
+.align-custom-text {
+  text-align: center;
+  align-items: center;
+}
+
+.view-sui-container, .suistartup-modal {
+  margin-bottom: 2em;
+}
+
+.button-container {
+  justify-content: space-around;
+  display: flex;
+}
+
+.button-container .nes-btn {
+  min-width: 16em;
+  margin: 1em auto;
+  display: block;
+}
+
+#suistartup-actions {
+  text-align: center;
+  justify-content: space-around;
+}
+
+#suistartup-actions .error {
+  margin-bottom: 1.5em;
+  font-size: .9em;
+  font-style: italic;
+  display: block;
+}
+
+#suistartup-actions .nes-btn:last-child {
+  margin: 0 auto;
+}
+
+#suistartup-summary {
+  width: auto;
+}
+
+#suistartup-summary td:nth-child(1) {
+  text-align: right;
+  white-space: nowrap;
+  padding-right: 1.5em;
+}
+
+#suistartup-summary td, #suistartup-summary tr {
+  overflow-wrap: anywhere;
+}
+
+.field-note {
+  color: #606060;
+  margin: 0 0 0 4px;
+  font-size: .85em;
+}
+
+#footer {
+  margin-bottom: 5em;
+  padding-left: .1em;
+  padding-right: .2em;
+  font-size: .75em;
+}
+
+#footer a {
+  opacity: .7;
+  color: #fff;
+}
+
+#footer a:hover {
+  opacity: 1;
+  color: #fff;
+  text-decoration: none;
+}
+
+#footer-links {
+  float: left;
+  font-size: 1.9em;
+  line-height: .75em;
+}
+
+#footer-links .icon {
+  margin-right: .2em;
+}
+
+#footer-signature {
+  float: right;
+}
+
+#footer-signature .nes-icon {
+  vertical-align: bottom;
+}
+
+#footer a:hover .rainbow, .rainbow:hover {
+  background-image: linear-gradient(to left, violet, indigo, #00f, green, gold, orange, red);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-decoration: none;
+}
+
+.font-settled {
+  font-size: 26px !important;
+}
+
+.whitelisted-font-color {
+  color: #add8e6;
+}
+
+.investing-font-color {
+  color: #adff2f;
+}
+
+.whitelisted-completed-font-color {
+  color: #fafad2;
+}
+
+.comming-font-color {
+  color: gold;
+}
+
+.completed-font-color {
+  color: #f08080;
+}
+
+.btn-wrapper-end {
+  text-align: end;
+}
+
+.cloud, .steak {
+  width: 145px;
+  height: 108px;
+  background-repeat: no-repeat;
+  position: absolute;
+}
+
+.cloud:hover {
+  width: 150px;
+  height: 113px;
+  background-size: 150px;
+}
+
+.steak {
+  background-position: center;
+  background-size: 140px;
+}
+
+.door-closed, .door-open {
+  width: 100px;
+  height: 162px;
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: contain;
+  position: absolute;
+}
+
+#not-found-img {
+  width: 100%;
+  image-rendering: pixelated;
+  border: 4px solid #000;
+}
+
+#secret {
+  display: none;
+}
+
+.player-box {
+  border: 4px solid #000;
+  margin: 1em 0;
+  padding: 1em;
+}
+
+.player-box .player-box-answer {
+  margin-top: 1em;
+  display: block;
+}
+
+@media (max-width: 810px) {
+  body {
+    font-size: .75em;
+  }
+
+  textarea {
+    min-height: 80px;
+  }
+
+  #main {
+    border-width: 0 0 4px;
+    margin-top: 0;
+  }
+
+  #header {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    box-shadow: 0 2px 20px #000;
+  }
+
+  #footer {
+    padding-left: .5em;
+    padding-right: .6em;
+  }
+
+  th, td {
+    padding-right: 1em;
+  }
+
+  th:nth-child(1), td:nth-child(1) {
+    padding-right: 2em;
+  }
+
+  .nes-btn, .nes-input, .nes-textarea, .nes-select select {
+    border-image: initial;
+    border: 3px solid #212529;
+  }
+
+  .nes-btn:hover {
+    border-color: #000;
+  }
+
+  .nes-btn:after, .nes-btn:hover:after, .nes-btn.is-primary:after, .nes-btn.is-primary:hover:after, .nes-btn.is-success:after, .nes-btn.is-success:hover:after, .nes-btn.is-warning:after, .nes-btn.is-warning:hover:after, .nes-btn.is-error:after, .nes-btn.is-error:hover:after {
+    box-shadow: initial;
+  }
+
+  #network-widget {
+    color: inherit;
+  }
+}
+
+.nes-icon.is-small {
+  margin-bottom: .1em;
+  transform: scale(1.1);
+}
+
+.nes-icon.is-custom {
+  margin: 0 .5em .4em .2em;
+  transform: scale(1.6);
+}
+
+.custom-logo {
+  margin: 0 -.4em -.3em;
+  transform: scale(.75);
+}
+
+.nes-select {
+  margin-top: 0;
+}
+
+.nes-field {
+  margin-top: 1.8em;
+}
+
+.nes-field > label, .nes-field .nes-input, .nes-field .nes-textarea {
+  border-width: 1px;
+}
+
+.nes-select select {
+  border-width: 1px !important;
+}
+
+.section-title {
+  margin-top: 2em;
+  font-style: italic;
+  display: block;
+}
+
+.section-title:hover {
+  cursor: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAzElEQVRYR+2X0Q6AIAhF5f8/2jYXZkwEjNSVvVUjDpcrGgT7FUkI2D9xRfQETwNIiWO85wfINfQUEyxBG2ArsLwC0jioGt5zFcwF4OYDPi/mBYKm4t0U8ATgRm3ThFoAqkhNgWkA0jJLvaOVSs7j3qMnSgXWBMiWPXe94QqMBMBc1VZIvaTu5u5pQewq0EqNZvIEMCmxAawK0DNkay9QmfFNAJUXfgGgUkLaE7j/h8fnASkxHTz0DGIBMCnBeeM7AArpUd3mz2x3C7wADglA8BcWMZhZAAAAAElFTkSuQmCC") 14 0, pointer;
+  color: #555;
+}
+
+.section-title:hover span {
+  text-decoration: underline;
+}
+
+.section-body {
+  margin: 1em 0;
+  font-size: .9em;
+}
+
+.layout-logo {
+  width: 100%;
+}
+
+.layout-content {
+  margin: 1.5rem 0;
+}
+
+.layout-wrapper {
+  -webkit-box-shadow: var(--bsShadowIO);
+  box-shadow: var(--bsShadowIO);
+  border-radius: 30px;
+  padding: 30px;
+  position: relative;
+}
+
+.flex-wrapper {
+  flex-direction: column;
+}
+
+.import-btn-wrapper {
+  flex-direction: row;
+  display: flex;
+}
+
+.wallet-button, .bsBtn-info {
+  width: 80%;
+  font-size: 16px;
+  font-weight: var(--fontWeight600);
+  color: var(--white);
+  cursor: pointer;
+  height: auto;
+  text-align: center;
+  background-size: 300% 100%;
+  border: none;
+  margin: .5rem;
+  transition: all .4s ease-in-out;
+  box-shadow: 0 4px 15px #0284ad;
+  background-image: var(--bgGradient) !important;
+  height: auto !important;
+  border-radius: 50rem !important;
+  padding: 16px 32px !important;
+  line-height: normal !important;
+}
+
+.wallet-button:hover, .bsBtn-info:hover {
+  color: var(--white);
+  background-position: 100% 0;
+  transition: all .4s ease-in-out;
+}
+
+.layout-btn-wallet {
+  background-color: var(--btn-green-bg);
+  color: var(--textColor);
+  max-width: 250px;
+  text-align: center;
+  margin: 0 auto 15px;
+}
+
+.layout-btn-wallet:hover {
+  background-color: var(--buttonHover);
+  color: var(--textColor);
+  border: 1px solid var(--btn-green-bg);
+}
+
+.form-wrapper {
+  margin: 0 25%;
+}
+
+.MuiInputBase-root, .MuiButton-root {
+  color: #fff !important;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, Courier New, monospace;
+}
+
+/*# sourceMappingURL=index.3092e1e0.css.map */
