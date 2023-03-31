@@ -1,0 +1,433 @@
+:root {
+    --theme-color-one: #03173b;
+    --theme-color-two: #000D27;
+    --theme-color-three: #0B1F44;
+    --btn-green-bg: #1ADCAB;
+
+    --black: #000000;
+    --white: #FFFFFF;
+    --light: #C5D3E1;
+    --pink: #ff5a79;
+    --gray666: #666666;
+    --gray3d3d: #3d3d3d;
+    --red: #fd0013;
+    --pink: #b163df;
+    --gray7575: #757575;
+
+    --primary-bg: #efeefc;
+    --white-bg: #FFFFFF;
+
+    --fontWeight100: 100;
+    --fontWeight200: 200;
+    --fontWeight300: 300;
+    --fontWeight400: 400;
+    --fontWeight500: 500;
+    --fontWeight600: 600;
+    --fontWeight700: 700;
+    --fontWeight800: 800;
+    --fontWeight900: 900;
+
+    --textColor: var(--white) !important;
+
+    --fontFiraSans: 'Fira Sans', sans-serif;
+    --fontRighteous: 'Righteous', cursive;
+
+    --bgGradient: linear-gradient(to right, #0284ad, #0284ad, #04feb3, #3fede1);
+    --bsGradient: linear-gradient(318deg, rgb(93 50 106 / 10%), rgb(93 50 106 / 0%));
+    --bsShadowOut: -2px -2px 10px rgb(255 255 255 / 10%), 2px 2px 10px rgb(0 0 0 / 75%);
+    --bsShadowIn: inset 2px 2px 10px rgb(0 0 0 / 75%), inset -2px -2px 10px rgb(255 255 255 / 10%);
+    --bsShadowOB: 2px 2px 10px rgb(0 0 0 / 75%), -2px -2px 10px rgb(255 255 255 / 10%);
+    --bsShadowIO: -2px -2px 10px rgb(255 255 255 / 10%), 2px 2px 10px rgb(0 0 0 / 75%), inset -2px -2px 10px rgb(255 255 255 / 10%), inset 2px 2px 10px rgb(0 0 0 / 75%);
+}
+
+/* Custom Fonts  */
+/* @import url('https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap'); */
+
+/* opacity */
+.opacity-0 {
+    opacity: 0 !important;
+}
+
+.opacity-25 {
+    opacity: .25 !important;
+}
+
+.opacity-50 {
+    opacity: .5 !important;
+}
+
+.opacity-75 {
+    opacity: .75 !important;
+}
+
+.opacity-100 {
+    opacity: 1 !important;
+}
+
+/* /opacity */
+/* ellipsis */
+.ellipsis1 {
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.ellipsis2 {
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.margin-btn-wrapper {
+    margin: 2rem 0;
+}
+
+/* /ellipsis */
+/* bsBtn */
+.bsBtn-dark {
+    color: #ffffff;
+    display: inline-block;
+    border: 1px solid transparent;
+    padding: 12px 28px 10px 28px;
+    border-radius: 50rem;
+    font-size: 13px;
+    letter-spacing: .5px;
+    background: var(--bsGradient);
+    -webkit-box-shadow: var(--bsShadowOut);
+    box-shadow: var(--bsShadowOut);
+}
+
+.bsBtn-dark:focus,
+.bsBtn-dark:hover {
+    color: #ffffff;
+    -webkit-box-shadow: var(--bsShadowIO);
+    box-shadow: var(--bsShadowIO);
+    border: 1px solid rgb(201 156 140 / 14%);
+}
+
+.wallet-button,
+.bsBtn-info {
+    font-size: 16px;
+    font-weight: var(--fontWeight600);
+    color: var(--white);
+    cursor: pointer;
+    height: auto;
+    text-align: center;
+    border: none;
+    background-size: 300% 100%;
+    background-image: var(--bgGradient) !important;
+    -webkit-box-shadow: 0 4px 15px 0 rgb(65 132 234 / 75%);
+    box-shadow: 0 4px 15px 0 rgb(65 132 234 / 75%);
+    padding: 16px 32px !important;
+    border-radius: 50rem !important;
+    line-height: normal !important;
+    height: auto !important;
+
+    -webkit-transition: all .4s ease-in-out;
+    transition: all .4s ease-in-out;
+}
+
+.wallet-button:hover,
+.bsBtn-info:hover {
+    background-position: 100% 0;
+    color: var(--white);
+
+    -webkit-transition: all .4s ease-in-out;
+    transition: all .4s ease-in-out;
+}
+
+.layout-wrapper {
+    margin: 8em 25%;
+}
+
+.layout-btn-wallet {
+    max-width: 250px !important;
+    margin: 0 auto !important;
+}
+
+.qr-wrapper {
+    margin: 0 auto;
+    width: fit-content;
+}
+
+.qr-text {
+    text-align: center;
+}
+
+/* bsBtn */
+img,
+svg {
+    max-width: 100%;
+}
+
+body {
+    font-family: var(--fontFiraSans);
+    font-weight: normal;
+    font-style: normal;
+    background: linear-gradient(to top right, #222323 40%, #21415b);
+    background-repeat: no-repeat;
+}
+
+.logo-img {
+    width: 400px;
+    cursor: pointer;
+}
+
+.cursor-pointer {
+    cursor: pointer !important;
+}
+
+.font-bebas-bold {
+    font-family: var(--fontFiraSans);
+}
+
+.fix {
+    overflow: hidden;
+}
+
+.theme-color {
+    color: var(--textColor);
+}
+
+.pink-color {
+    color: var(--pink);
+}
+
+.cmn-border {
+    border-radius: 20px;
+}
+
+.bx-shadow-2 {
+    box-shadow: 0 10px 15px #1adcab2b;
+}
+
+.align-center {
+    text-align: center;
+}
+
+p {
+    font-size: 16px;
+    font-weight: var(--fontWeight400);
+    line-height: 1.5;
+    margin-bottom: 0px;
+    color: var(--textColor);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-weight: var(--fontWeight500);
+    margin-top: 0px;
+    color: var(--textColor);
+}
+
+h2 {
+    font-size: 36px;
+}
+
+h3 {
+    font-size: 28px;
+}
+
+h4 {
+    font-size: 22px;
+}
+
+h5 {
+    font-size: 18px;
+}
+
+h6 {
+    font-size: 16px;
+}
+
+a {
+    font-size: 16px;
+}
+
+.img {
+    max-width: 100%;
+    -webkit-transition: all 0.3s ease-out 0s;
+    transition: all 0.3s ease-out 0s;
+}
+
+a:focus,
+input:focus,
+textarea:focus,
+button:focus {
+    text-decoration: none;
+    outline: none;
+}
+
+a:focus,
+a:hover {
+    text-decoration: none;
+}
+
+a {
+    text-decoration: none;
+    transition: .3s;
+}
+
+ul,
+ol {
+    margin: 0px;
+    padding: 0px;
+    list-style-type: none;
+}
+
+.mb-30 {
+    margin-bottom: 30px;
+}
+
+.mb-60 {
+    margin-bottom: 60px;
+}
+
+.input-inside label {
+    font-size: 17px;
+    line-height: 160%;
+    color: var(--black);
+    position: absolute;
+    top: 50%;
+    background: var(--white);
+    padding: 0 4px;
+    left: 15px;
+    display: block;
+    -webkit-transition: .3s;
+    transition: .3s;
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+
+.input-inside {
+    position: relative;
+    margin-bottom: 14px;
+}
+
+.input-inside input:focus+label,
+.input-inside textarea:focus+label,
+.input-inside.filled label {
+    top: 0;
+    font-size: 12px;
+    color: var(--theme-color-one);
+}
+
+.input-inside input,
+textarea {
+    width: 100%;
+    height: 50px;
+    border-radius: 8px;
+    border: 1px solid var(--borderColor);
+    padding: 0 15px;
+    transition: .3s;
+}
+
+.input-inside textarea {
+    height: 100px;
+    resize: none;
+}
+
+.input-inside input:focus {
+    border-color: var(--borderColor);
+}
+
+.text-left {
+    text-align: left;
+}
+
+.text-right {
+    text-align: right;
+}
+
+.w-g-wrapper-lable {
+    position: absolute;
+    top: -40px;
+    background: var(--primaryColor1);
+    padding: 4px 8px;
+    margin-bottom: 0px;
+    color: var(--white);
+    letter-spacing: 0.16em;
+    text-transform: uppercase;
+    opacity: 0.9;
+}
+
+/* -------------Customer support css------------ */
+.customer-support-box {
+    padding: 25px 60px;
+}
+
+.customer-support-box input {
+    background: transparent;
+    border: 1px solid #9da5b4;
+    margin: 20px 0;
+    color: var(--white);
+}
+
+.customer-support-box textarea {
+    background: transparent;
+    border: 1px solid #9da5b4;
+    padding: 15px;
+    margin: 20px 0;
+    color: var(--white);
+}
+
+.customer-support-box__inner {
+    padding-top: 15px;
+}
+
+.icon-href {
+    margin: 0 20px 0 0;
+}
+
+.launchpad-icon-svg {
+    width: 22px;
+    background: transparent;
+}
+
+.launchpad-wrapper-lable {
+    position: absolute;
+    top: -10px;
+    background: var(--primaryColor1);
+    padding: 4px 8px;
+    margin-bottom: 0px;
+    color: var(--textColor);
+    letter-spacing: 0.16em;
+    text-transform: uppercase;
+    opacity: 0.9;
+}
+
+.success-msg {
+    color: var(--textColor);
+}
+
+.bsTitle {
+    padding-bottom: 0.5rem;
+}
+
+.flex-justify-content {
+    display: flex;
+    justify-content: space-between;
+}
+
+.closed-content {
+    text-align: center;
+    align-items: center;
+    margin: 2rem 0;
+}
+
+.custome-btn-wrapper {
+    background-color: #0284ad;
+    border: 0 solid #0284ad;
+    color: white;
+    padding: 0.2rem 1.2rem;
+    border-radius: 4px;
+}

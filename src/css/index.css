@@ -1,0 +1,92 @@
+@import 'styles.less';
+@import 'Home.less';
+
+.layout-logo {
+    width: 100%;
+}
+
+.layout-content {
+    margin: 1.5rem 0;
+}
+
+.layout-wrapper {
+    padding: 30px;
+    border-radius: 30px;
+    position: relative;
+    -webkit-box-shadow: var(--bsShadowIO);
+    box-shadow: var(--bsShadowIO);
+}
+
+.flex-wrapper {
+    flex-direction: column;
+}
+
+.import-btn-wrapper {
+    display: flex;
+    flex-direction: row;
+}
+
+.wallet-button,
+.bsBtn-info {
+    width: 80%;
+    margin: 0.5rem;
+    font-size: 16px;
+    font-weight: var(--fontWeight600);
+    color: var(--white);
+    cursor: pointer;
+    height: auto;
+    text-align: center;
+    border: none;
+    background-size: 300% 100%;
+    background-image: var(--bgGradient) !important;
+    -webkit-box-shadow: 0 4px 15px 0 #0284ad;
+    box-shadow: 0 4px 15px 0 #0284ad;
+    padding: 16px 32px !important;
+    border-radius: 50rem !important;
+    line-height: normal !important;
+    height: auto !important;
+
+    -webkit-transition: all .4s ease-in-out;
+    transition: all .4s ease-in-out;
+}
+
+.wallet-button:hover,
+.bsBtn-info:hover {
+    background-position: 100% 0;
+    color: var(--white);
+
+    -webkit-transition: all .4s ease-in-out;
+    transition: all .4s ease-in-out;
+}
+
+.layout-btn-wallet {
+    background-color: var(--btn-green-bg);
+    color: var(--textColor);
+    max-width: 250px;
+    margin: 0 auto;
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.layout-btn-wallet:hover {
+    background-color: var(--buttonHover);
+    color: var(--textColor);
+    border: 1px solid var(--btn-green-bg);
+}
+
+.form-wrapper {
+    margin: 0 25%;
+}
+
+.MuiInputBase-root {
+    color: #ffffff !important;
+}
+
+.MuiButton-root {
+    color: #ffffff !important;
+}
+
+code {
+    font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+        monospace;
+}
